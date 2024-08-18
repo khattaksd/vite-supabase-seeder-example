@@ -4,9 +4,10 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "tsc && vite build",
-    "preview": "vite preview"
+    "supabase-start": "supabase start",
+    "supabase-stop": "supabase stop --no-backup",
+    "supabase-status": "supabase status",
+    "dev": "pnpm supabase-start && vite"
   },
   "devDependencies": {
     "typescript": "^5.5.3",
